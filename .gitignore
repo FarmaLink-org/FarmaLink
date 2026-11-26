@@ -1,0 +1,79 @@
+# Operating System
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Logs
+*.log
+logs/
+
+# Node.js
+node_modules/
+dist/
+build/
+coverage/
+.npm/
+
+# React / Vite
+.vite/
+
+# Capacitor
+android/.gradle/
+ios/Pods/
+
+# Electron
+release/
+out/
+electron-builder.yml
+
+# Java / Gradle
+.gradle/
+**/build/
+*.class
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Test reports
+test-results/
+playwright-report/
+allure-results/
+
+# Python (automation utilities)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
