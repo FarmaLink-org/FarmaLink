@@ -1,0 +1,23 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+spring:
+  application:
+    name: identity-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+app:
+  service:
+    name: ${SPRING_APPLICATION_NAME:identity-service}
+    version: ${APP_VERSION:0.1.0-SNAPSHOT}
+    environment: ${APP_ENV:local}
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}
